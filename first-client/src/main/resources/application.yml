@@ -15,6 +15,11 @@ spring:
   application:
     #定义应用名称，即服务名称
     name: consumer-server
+  rabbitmq:
+    host: 39.106.125.13
+    port: 5672
+    username: yuanyuan
+    password: yuanyuan
 eureka:
   client:
     service-url:

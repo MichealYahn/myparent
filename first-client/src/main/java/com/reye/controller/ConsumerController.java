@@ -1,8 +1,7 @@
 package com.reye.controller;
 
-import com.reye.entities.Product;
 import com.reye.service.ProductService;
-import org.apache.commons.lang.StringUtils;
+import com.reye.service.Sender;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +15,13 @@ public class ConsumerController {
 
     @Autowired private ProductService productService;
 
+    @Autowired private Sender sender;
+
     @GetMapping("/first")
     public Object hello(){
         logger.info("我是来自7001客户端的消息");
+        sender.send("我喜欢这个东西");
         return productService.getProduct();
     }
+
 }
