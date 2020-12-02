@@ -8,6 +8,8 @@
         <module>myeureka</module>
         <module>first-server</module>
         <module>first-client</module>
+        <module>second-client</module>
+        <module>second-server</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

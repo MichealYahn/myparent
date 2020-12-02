@@ -1,11 +1,11 @@
 server:
-  port: 7002
+  port: 7006
   servlet:
     context-path: /product
 
 spring:
   application:
-    name: first-product-server
+    name: second-product-server
   rabbitmq:
     host: 39.106.125.13
     port: 5672
@@ -22,6 +22,6 @@ eureka:
 
 config:
   mq:
-    queue: first.name
+    queue: second.name
     exchange: myexchange
-    routing: routing.*.a
+    routing: routing.*.b

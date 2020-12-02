@@ -19,8 +19,8 @@ public class ConsumerController {
 
     @GetMapping("/first")
     public Object hello(){
-        logger.info("我是来自7001客户端的消息");
-        sender.send("我喜欢这个东西1");
+        logger.info("我是来自7002客户端的消息");
+        sender.send("我喜欢这个东西2");
         return productService.getProduct();
     }
 
