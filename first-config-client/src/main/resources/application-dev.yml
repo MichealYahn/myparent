@@ -1,0 +1,14 @@
+server:
+  port: 7020
+
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+msg:
+  hello: yuanlai-hello-dev
+  nihao: yuanxian-nihao-dev

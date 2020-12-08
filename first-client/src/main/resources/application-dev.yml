@@ -1,0 +1,12 @@
+server:
+  servlet:
+    context-path: /consumer
+  port: 7001
+
+
+config:
+  mq:
+    exchange: myexchange
+    routing: routing.first.b
+msg:
+  hello: guozhi-7001-dev

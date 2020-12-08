@@ -1,0 +1,24 @@
+server:
+  port: 7020
+spring:
+  profiles: prod
+  application:
+    name: config-eureka-client
+  cloud:
+    config:
+      label: main
+      profile: prod
+      discovery:
+        enabled: true
+        service-id: config-server
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+msg:
+  hello: yuanlai-hello-prod
+  nihao: yuanxian-nihao-prod

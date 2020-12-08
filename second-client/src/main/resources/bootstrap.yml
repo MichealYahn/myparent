@@ -1,0 +1,26 @@
+spring:
+  #  下面是我整合redis使用的配置，你们此处不需要
+  #  redis:
+  #    cluster:
+  #      expire-seconds: 120
+  #      command-timeout: 5000
+  #      nodes:
+  #  namenode22:6379,datanode23:6379,datanode24:6379,datanode25:6379,datanode26:6379,datanode27:6379
+  application:
+    name: consumer-server
+  rabbitmq:
+    host: 39.106.125.13
+    port: 5672
+    username: yuanyuan
+    password: yuanyuan
+  cloud:
+    config:
+      label: main
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5060/eureka/eureka

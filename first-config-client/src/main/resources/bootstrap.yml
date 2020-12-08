@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: prod
+  application:
+    name: config-eureka-client
+  rabbitmq:
+    host: 39.106.125.13
+    port: 5672
+    username: yuanyuan
+    password: yuanyuan
+  cloud:
+    config:
+      label: main
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5060/eureka/eureka
